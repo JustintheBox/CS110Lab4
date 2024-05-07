@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <div class="filter"> 
+      <div class="header-label">Filter</div>
+      <div class="label">Sort By:</div>
+      <div class="content">
+      <form id="filterForm" action="#">
+        <div class="buttons">
+          <label>
+            <input type="radio" name="sortBy" value="viewed" checked>
+            Most Viewed
+          </label><br>
+          <label>
+            <input type="radio" name="sortBy" value="shared">
+            Most Shared
+          </label><br>
+          <label>
+            <input type="radio" name="sortBy" value="emailed">
+            Most Emailed
+          </label><br>
+        </div>
+      </form>
+    </div>
+
+    <div class="label" >Time Frame:</div>
+      <div class="content">
+        <form id="filterForm" action="#">
+          <div class="buttons">
+            <label>
+              <input type="radio" name="timeFrame" value="1" checked>
+              Day
+            </label><br>
+            <label>
+              <input type="radio" name="timeFrame" value="7">
+              Week
+            </label><br>
+            <label>
+              <input type="radio" name="timeFrame" value="30">
+              Month
+            </label><br>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="news-container"></div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
